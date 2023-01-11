@@ -1,5 +1,6 @@
 class InvoicesPage {
   elements = {
+    loggedUrlText: () => cy.url(),
     invoiceHeaderLabel: () => cy.get('h2').contains('Invoice List'),
     invoiceDetailsLink: () => cy.get('a[href="/invoice/0"]'),
     hotelNameLabel: () => cy.get('h4').contains('Rendezvous Hotel'),

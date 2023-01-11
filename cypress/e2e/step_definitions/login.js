@@ -21,6 +21,7 @@ import {invoicesPage} from '../pages/InvoicesPage';
   Then("the invoices main page is shown succefully", () =>{
     invoicesPage.elements.invoiceHeaderLabel().should('be.visible');
     invoicesPage.elements.invoiceHeaderLabel().should('have.text', 'Invoice List');
+    invoicesPage.elements.loggedUrlText().should('include', '/account');
   });
 
   Given("i provide incorrect username as {string} and password as {string}", function (username, password) {
