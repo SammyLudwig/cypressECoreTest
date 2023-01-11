@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^12.3.0",
+    "esbuild": "^0.16.16"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.0",
+    "multiple-cucumber-html-reporter": "^3.0.3"
+  },
+  "scripts": {
+    "cypress:runner": "cypress open --e2e -b chrome",
+    "cypress:execution": "cypress run",
+    "cypress:chrome-headed": "cypress run -b chrome --headed",
+    "cypress:edge-headed": "cypress run -b edge --headed"
+  }
+}
