@@ -1,6 +1,4 @@
 node_modules
-videos/
-jsonlogs/
-screenshots/
-*.mp4
-*.png
+videos
+jsonlogs
+screenshots
